@@ -14,7 +14,9 @@ function App() {
 
   return (
     <Router history={history}>
-      <button onClick={() => loginWithRedirect({})}>LOGIN</button>
+      <button style={{ color: "blue" }} onClick={() => loginWithRedirect({})}>
+        LOGIN
+      </button>
       <button onClick={logout}>Logout</button>
       <div>{isAuthenticated ? "Authenticated" : "Not authenticated"}</div>
     </Router>

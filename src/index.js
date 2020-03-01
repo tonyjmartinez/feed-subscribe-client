@@ -7,6 +7,7 @@ import { Auth0Provider } from "./utils/auth0-helper";
 import history from "./utils/history";
 const clientId = process.env.REACT_APP_CLIENT_ID;
 const isDev = !process.env.NODE_ENV || process.env.NODE_ENV === "development";
+console.log("isDev?", isDev);
 
 const onRedirectCallback = appState => {
   console.log("appState", appState);
